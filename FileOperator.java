@@ -42,4 +42,9 @@ public class FileOperator {
          } 
         return arr;
     }
+    public ArrayList<String> toStringList(){
+        ArrayList<String> result = new ArrayList<String>();
+
+        while()
+    }
 }
