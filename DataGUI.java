@@ -1,13 +1,13 @@
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 
-public class DataGui extends JFrame {
+public class DataGUI extends JFrame {
     private JTextField inputField;
     private JTextArea resultsArea;
     private FileOperator file = new FileOperator("data/arenas.txt");
     
-    public DataGui() {
+    public DataGUI() {
         setTitle("Arena Data Analyzer");
         setSize(500, 400);
         setLayout(new FlowLayout());
@@ -101,10 +101,10 @@ private void getMostCommonArena(){
 
     private void getMinChampionships(){
         String[] arenas = DataAnalyzer.minChampionships(file);
-        resultsArea.setText("Teams with the smallest # of championships: " + string(arenas));
+        resultsArea.setText("Teams with the smallest # of championships: "  + string(arenas));
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new DataGui().setVisible(true));
+        SwingUtilities.invokeLater(() -> new DataGUI().setVisible(true));
     }
 }
